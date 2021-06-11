@@ -1,0 +1,19 @@
+.btn {
+    width: 282px;
+    height: 66px;
+    background: #FFC700;
+    border-radius: 100px;
+    box-shadow: 0px 5px 0px #AF3500, 0px 9px 5px rgba(198, 172, 35, 0.3);
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        background: #FFE600;
+    }
+    img {
+        margin-right: 5px;
+    }
+}

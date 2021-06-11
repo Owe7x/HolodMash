@@ -1,0 +1,66 @@
+.holdmash {
+    background: url(../images/4-bg.jpg);
+    margin-top: 150px;
+    padding-top: 180px;
+    background-repeat: no-repeat;
+    &-content {
+        margin-bottom: 90px;
+    }
+    &-circle {
+        position: relative;
+        &::before {
+            display: block;
+            content: '';
+            width: 821px;
+            height: 821px;
+            background: #052B5B;
+            border-radius: 50%;
+            position: absolute;
+            top: -130px;
+            left: -150px;
+            z-index: 0;
+        }
+
+    }
+    &-nav {
+        position: relative;
+    }
+    &-li {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 500;
+        color: $white;
+        margin-bottom: 15px;
+        li {
+            list-style-type: none;
+        }
+        li:before {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 20px;
+            color: $orange; 
+            content: "•"; 
+            padding-right: 22px; /* Отступ от маркера до текста */
+        }
+    }
+    &-block {
+        display: flex;
+        align-items: center;
+        background: $orange;
+        border-radius: 50px 10px;
+        padding: 14px 30px;
+        width: 548px;
+        margin-top: 450px;
+        position: relative;
+        z-index: 1;
+        &__text {
+            color: $white;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 28px;
+        }
+        &__img {
+            margin-right: 30px;
+        }
+    }
+}

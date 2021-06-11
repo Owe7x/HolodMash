@@ -1,0 +1,30 @@
+.discont {
+    background: url(../images/9-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-content {
+        padding-top: 200px;
+    }
+    &-blocks {
+        margin-top: 80px;
+    }
+    &-block {
+        max-width: 534px;
+        margin-bottom: 60px;
+        &__img {
+            margin-bottom: 20px;
+        }
+        &__title {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+        &__p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: #434343;
+        }
+    }
+}

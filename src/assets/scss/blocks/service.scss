@@ -1,0 +1,47 @@
+.service {
+    background: url(../images/6-bg.jpg);
+    background-repeat: no-repeat;
+    &-content {
+        padding: 175px 0 125px;
+        max-width: 658px;
+    }
+    &-nav {
+        color: $white;
+        margin-bottom: 50px;
+    }
+    &-li {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        padding-left: 69px;
+        position: relative;
+        margin-bottom: 12px;
+        &::before {
+            display: block;
+            content: '';
+            width: 45px;
+            height: 13px;
+            background: url(../images/service-li.png);
+            position: absolute;
+            top: 7px;
+            left: 0;
+        }
+    }
+    &-block {
+        border: 2px solid #FF4200;
+        box-sizing: border-box;
+        border-radius: 50px 10px;
+        max-width: 629px;
+        padding: 19px 25px;
+        display: flex;
+        align-items: center;
+        &__img {
+            margin-right: 27px;
+        }
+        &__text {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+}

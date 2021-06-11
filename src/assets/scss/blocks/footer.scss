@@ -1,0 +1,34 @@
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.footer-info {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: #434343;
+    &-text {
+        margin-bottom: 10px;
+    }
+}
+.footer__phone {
+    a {
+        color: #FF4200;
+    }
+}
+.footer__number {
+    margin-bottom: 10px;
+    a {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FF4200;
+        text-decoration: none;
+    }
+}
+.footer__author__img {
+    margin-top: 10px;
+}

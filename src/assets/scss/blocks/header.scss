@@ -1,0 +1,30 @@
+.header {
+    background: #FAFAFA;
+    &__tel {
+        a {
+            color: $orange;
+            font-weight: bold;
+            font-size: 22px;
+            text-decoration: none;
+        }
+    }
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0 18px;
+}
+.ul-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.nav-li {
+    font-weight: bold;
+    margin-right: 43px;
+    cursor: pointer;
+    &:last-child {
+        margin-right: 0px;
+    }
+}

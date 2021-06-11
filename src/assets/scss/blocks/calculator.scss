@@ -1,0 +1,88 @@
+.calculator {
+    background: url(../images/8-bg.jpg);
+    background-repeat: no-repeat;
+    &-finish {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 846px;
+        margin-top: 20px;
+        &__price {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 30px;
+            color: #FFFFFF;
+            text-align: center;
+            background: #023575;
+            border-radius: 45px;
+            padding: 20px 60px;
+        }
+    }
+    &-number {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    &-content {
+        max-width: 1170px;
+        margin: 0 auto;
+        background: #052B5B;
+        padding: 60px 0 50px 70px;
+        border-radius: 75px;
+        position: relative;
+        &::after {
+            display: block;
+            content: '';
+            background: url(../images/calculator-bg.png);
+            width: 214px;
+            height: 520px;
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+        }
+    }
+    &-info {
+        max-width: 846px;
+        &-block {
+            margin-bottom: 19px;
+            &__title {
+                display: flex;
+                justify-content: center;
+            }
+            &__number {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    &-title {
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 36px;
+        text-align: center;
+        color: #FF4200;
+    }
+    &-p {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: $white;
+        margin-bottom: 44px;
+    }
+}
+
+.calculator-title-bg {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: #00377C;
+    border-radius: 18.5px;
+    text-align: center;
+    padding: 3px 18px;
+}

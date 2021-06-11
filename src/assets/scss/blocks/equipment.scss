@@ -1,0 +1,51 @@
+.equipment {
+    background: url(../images/second-bg.jpg);
+    background-repeat: no-repeat;
+    margin-top: 150px;
+    &-content {
+        margin-bottom: 150px;
+    }
+    &-li {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 500;
+        color: #434343;
+        margin-bottom: 15px;
+        li {
+            list-style-type: none;
+        }
+        li:before {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 20px;
+            color: $orange; 
+            content: "•"; 
+            padding-right: 22px; /* Отступ от маркера до текста */
+        }
+    }
+    &-img {
+        max-width: 695px;
+        img {
+            max-width: 665px;
+        }
+    }
+    &-block {
+        display: flex;
+        align-items: center;
+        background: #052B5B;
+        border-radius: 50px 10px;
+        padding: 14px 30px;
+        width: 548px;
+        margin-top: -80px;
+        position: relative;
+        &__text {
+            color: $white;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 28px;
+        }
+        &__img {
+            margin-right: 30px;
+        }
+    }
+}

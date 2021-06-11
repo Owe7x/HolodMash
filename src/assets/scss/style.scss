@@ -1,0 +1,46 @@
+@import "vars";
+@import "vendor/reset";
+@import "mixins";
+@import 'bootstrap/scss/bootstrap';
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $primary;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* Blocks */
+@import "blocks/header.scss";
+@import "blocks/header-main.scss";
+@import "blocks/text.scss";
+@import "blocks/form.scss";
+@import "blocks/btn.scss";
+@import "blocks/equipment.scss";
+@import "blocks/slider.scss";
+@import "blocks/ion.rangeSlider.scss";
+@import "blocks/slick-theme.scss";
+@import "blocks/slick.scss";
+@import "blocks/holdmash.scss";
+@import "blocks/structure.scss";
+@import "blocks/service.scss";
+@import "blocks/compmain.scss";
+@import "blocks/calculator.scss";
+@import "blocks/discont.scss";
+@import "blocks/buznes.scss";
+@import "blocks/sale.scss";
+@import "blocks/slider-2.scss";
+@import "blocks/footer-second.scss";
+@import "blocks/footer.scss";

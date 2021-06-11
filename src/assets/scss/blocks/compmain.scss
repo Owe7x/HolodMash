@@ -1,0 +1,28 @@
+.compmain {
+    background: url(../images/7-bg.jpg);
+    background-repeat: no-repeat;
+    padding: 150px 0 100px;
+    &-content {
+        max-width: 889px;
+    }
+}
+.compmain-nav-block {
+    display: flex;
+    margin-bottom: 26px;
+    &__img {
+        margin-right: 27px;
+        margin-top: 10px;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 34px;
+        color: #04092B;
+    }
+    &__price {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 34px;
+        color: $orange;
+    }
+}

@@ -1,0 +1,55 @@
+.header-main {
+    background: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    padding: 72px 0px 0px;
+    &__title {
+        max-width: 896px;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 48px;
+        margin-bottom: 36px;
+    }
+    &__bg {
+        background: $orange;
+        line-height: 64px;
+        padding: 10px 10px;
+    }
+    &__p {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 40px;
+        color: $white;
+    }
+    &__price {
+        color: $white;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    &__ul {
+        margin: 0;
+        color: $white;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    &__li {
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 16px;
+        &::after {
+            display: block;
+            content: '';
+            background: url(../images/header-main-li.png);
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            left: -15px;
+        }
+    }
+    &__nav {
+        margin-bottom: 56px;
+    }
+}
