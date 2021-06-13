@@ -4,8 +4,23 @@
     padding-top: 300px;
     position: relative;
     padding-bottom: 50px;
+    @include breakpoint($bp-769) {
+        margin-top: -75px;
+        padding-top: 150px;
+    }
 }
 .buznes-content__img {
     position: absolute;
     left: 0;
+    img {
+        @include breakpoint($bp-1441) {
+            max-width: 700px;
+        }
+        @include breakpoint($bp-1200) {
+            max-width: 550px;
+        }
+    }
+    @include breakpoint($bp-1200) {
+        display: none;
+    }
 }

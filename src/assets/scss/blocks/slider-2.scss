@@ -3,6 +3,9 @@
     background-repeat: no-repeat;
     margin-top: 150px;
     padding-bottom: 150px;
+    @include breakpoint($bp-1441) {
+        background-position: top center;
+    }
 }
 .single-slider-block {
     background: #FFFFFF;
@@ -12,6 +15,10 @@
     padding: 66px 100px 65px 71px;
     display: flex;
     align-items: flex-start;
+    @include breakpoint($bp-769) {
+        padding: 60px 40px;
+        flex-direction: column;
+    }
     &__title {
         font-weight: bold;
         font-size: 19px;
@@ -28,10 +35,20 @@
     &__img {
         margin-right: 10px;
         margin-top: 30px;
+        @include breakpoint($bp-769) {
+            margin-bottom: 50px;
+            margin: 0 auto 50px;
+        }
     }
     &__text {
         position: relative;
         padding: 50px 10px 20px 80px;
+        @include breakpoint($bp-769) {
+            padding: 50px 10px 20px 50px;
+        }
+        @include breakpoint($bp-426) {
+            padding: 20px 0 0;
+        }
         &::after {
             display: block;
             content: '';

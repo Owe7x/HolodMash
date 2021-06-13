@@ -6,6 +6,12 @@
             font-weight: bold;
             font-size: 22px;
             text-decoration: none;
+            @include breakpoint($bp-1200) {
+                font-size: 20px;
+            }
+            @include breakpoint($bp-426) {
+                display: none;
+            }
         }
     }
 }
@@ -19,6 +25,9 @@
     display: flex;
     justify-content: space-between;
     margin: 0;
+    @include breakpoint($bp-769) {
+        display: none;
+    }
 }
 .nav-li {
     font-weight: bold;
@@ -26,5 +35,8 @@
     cursor: pointer;
     &:last-child {
         margin-right: 0px;
+    }
+    @include breakpoint($bp-1200) {
+        font-size: 12px;
     }
 }

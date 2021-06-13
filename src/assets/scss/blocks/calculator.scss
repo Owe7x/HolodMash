@@ -17,6 +17,15 @@
             background: #023575;
             border-radius: 45px;
             padding: 20px 60px;
+            @include breakpoint($bp-769) {
+                font-size: 16px;
+                line-height: 26px;
+                padding: 20px 40px;
+                margin-bottom: 20px;
+            }
+        }
+        @include breakpoint($bp-769) {
+            flex-direction: column;
         }
     }
     &-number {
@@ -42,6 +51,15 @@
             position: absolute;
             bottom: -50px;
             right: -50px;
+            @include breakpoint($bp-1200) {
+                right: 0;
+            }
+            @include breakpoint($bp-1024) {
+                display: none;
+            }
+        }
+        @include breakpoint($bp-769) {
+            padding: 60px  20px;
         }
     }
     &-info {
@@ -64,6 +82,10 @@
         line-height: 36px;
         text-align: center;
         color: #FF4200;
+        @include breakpoint($bp-769) {
+            font-size: 28px;
+            line-height: 36px;
+        }
     }
     &-p {
         font-weight: bold;
@@ -72,6 +94,10 @@
         text-align: center;
         color: $white;
         margin-bottom: 44px;
+        @include breakpoint($bp-769) {
+            font-size: 20px;
+            line-height: 36px;
+        }
     }
 }
 
@@ -85,4 +111,8 @@
     border-radius: 18.5px;
     text-align: center;
     padding: 3px 18px;
+    @include breakpoint($bp-769) {
+        font-size: 14px;
+        line-height: 26px;
+    }
 }

@@ -2,6 +2,10 @@
     background: url(../images/3-bg.jpg);
     background-repeat: no-repeat;
     padding: 10px 0;
+    @include breakpoint($bp-1200) {
+        padding: 10px 80px;
+        background-position: center;
+    }
 }
 .responsive {
     display: flex;

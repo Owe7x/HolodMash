@@ -1,9 +1,21 @@
 .service {
     background: url(../images/6-bg.jpg);
     background-repeat: no-repeat;
+    @include breakpoint($bp-1441) {
+        background-position: top center;
+    }
+    @include breakpoint($bp-769) {
+        background-position: top left;
+    }
+    @include breakpoint($bp-426) {
+        background-size: cover;
+    }
     &-content {
         padding: 175px 0 125px;
         max-width: 658px;
+        @include breakpoint($bp-426) {
+            padding: 90px 0 65px;
+        }
     }
     &-nav {
         color: $white;
@@ -26,6 +38,10 @@
             top: 7px;
             left: 0;
         }
+        @include breakpoint($bp-769) {
+            font-size: 14px;
+            line-height: 26px;
+        }
     }
     &-block {
         border: 2px solid #FF4200;
@@ -35,13 +51,24 @@
         padding: 19px 25px;
         display: flex;
         align-items: center;
+        @include breakpoint($bp-769) {
+            flex-direction: column;
+        }
         &__img {
             margin-right: 27px;
+            @include breakpoint($bp-769) {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
         }
         &__text {
             font-weight: 600;
             font-size: 16px;
             line-height: 28px;
+            @include breakpoint($bp-769) {
+                font-size: 14px;
+                line-height: 26px;
+            }
         }
     }
 }

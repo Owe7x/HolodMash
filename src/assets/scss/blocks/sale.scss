@@ -2,4 +2,16 @@
     background: url(../images/10-bg.jpg);
     background-repeat: no-repeat;
     padding: 150px 0 80px;
+    @include breakpoint($bp-1441) {
+        background-position: top center;
+    }
+    @include breakpoint($bp-1200) {
+        background-size: cover;
+    }
+    @include breakpoint($bp-769) {
+        background: #f9f9f9;
+    }
+    @include breakpoint($bp-426) {
+        padding: 75px 0 40px;
+    }
 }

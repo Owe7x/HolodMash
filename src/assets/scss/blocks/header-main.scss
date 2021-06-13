@@ -1,7 +1,11 @@
 .header-main {
     background: url(../images/header-bg.jpg);
     background-repeat: no-repeat;
+    background-position: top center;
     padding: 72px 0px 0px;
+    @include breakpoint($bp-426) {
+        background-size: cover;
+    }
     &__title {
         max-width: 896px;
         color: $white;
@@ -9,23 +13,45 @@
         font-weight: bold;
         font-size: 48px;
         margin-bottom: 36px;
+        @include breakpoint($bp-769) {
+            font-size: 32px;
+            line-height: 30px;
+        }
+        @include breakpoint($bp-426) {
+            font-size: 24px;
+            line-height: 25px;
+        }
     }
     &__bg {
         background: $orange;
         line-height: 64px;
         padding: 10px 10px;
+        @include breakpoint($bp-769) {
+            line-height: 54px;
+        }
+        @include breakpoint($bp-426) {
+            line-height: 44px;
+        }
     }
     &__p {
         font-weight: 600;
         font-size: 22px;
         line-height: 40px;
         color: $white;
+        @include breakpoint($bp-769) {
+            font-size: 18px;
+            line-height: 30px;
+        }
     }
     &__price {
         color: $white;
         font-size: 32px;
         font-weight: bold;
         margin-bottom: 30px;
+        @include breakpoint($bp-769) {
+            font-size: 24px;
+            line-height: 45px;
+        }
     }
     &__ul {
         margin: 0;
@@ -33,6 +59,10 @@
         font-weight: 600;
         font-size: 18px;
         line-height: 30px;
+        @include breakpoint($bp-769) {
+            font-size: 14px;
+            line-height: 26px;
+        }
     }
     &__li {
         position: relative;

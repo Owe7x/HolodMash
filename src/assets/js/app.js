@@ -37,17 +37,17 @@ $('.responsive').slick({
     ]
   });
 
-  function sliderHandler(price) {
-    //calculate
-   // if (price === undefined) {
-     // price = srvPrices;
-   // }
+ /*  function sliderHandler(price) {
+    calculate
+    if (price === undefined) {
+      price = srvPrices;
+    }
 
    var persents = (price.totalS1 * 12000) + (price.totalS2 * 1070) + (price.totalS3 * 40000) + (price.totalS4 * 21000);
    var profit = persents * 0.3;
     document.getElementById("s1").innerHTML = persents.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' ' + 'рублей';
     document.getElementById("s2").innerHTML = profit.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' ' + 'рублей';
- }
+ } */
 
  var srvPrices = {}
  var c1 = document.getElementById("s3-check1");

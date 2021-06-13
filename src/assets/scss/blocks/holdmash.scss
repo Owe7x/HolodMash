@@ -3,6 +3,14 @@
     margin-top: 150px;
     padding-top: 180px;
     background-repeat: no-repeat;
+    @include breakpoint($bp-1200) {
+        padding-bottom: 30px;
+        background-size: cover;
+    }
+    @include breakpoint($bp-769) {
+        padding-top: 90px;
+        margin-top: 75px;
+    }
     &-content {
         margin-bottom: 90px;
     }
@@ -19,6 +27,15 @@
             top: -130px;
             left: -150px;
             z-index: 0;
+            @include breakpoint($bp-426) {
+                left: -280px;
+                top: -100px;
+                width: 1000px;
+                height: 1000px;
+            }
+        }
+        @include breakpoint($bp-1200) {
+            padding-left: 20px;
         }
 
     }
@@ -49,7 +66,7 @@
         background: $orange;
         border-radius: 50px 10px;
         padding: 14px 30px;
-        width: 548px;
+        max-width: 548px;
         margin-top: 450px;
         position: relative;
         z-index: 1;
@@ -58,9 +75,34 @@
             font-size: 16px;
             font-weight: bold;
             line-height: 28px;
+            @include breakpoint($bp-769) {
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 22px;
+            }
         }
         &__img {
             margin-right: 30px;
+            img {
+                @include breakpoint($bp-426) {
+                    max-width: 40px;
+                }
+            }
         }
+        @include breakpoint($bp-1200) {
+            margin-top: 50px;
+        }
+    }
+}
+
+.dn {
+    @include breakpoint($bp-1200) {
+        display: none;
+    }
+}
+.db {
+    display: none;
+    @include breakpoint($bp-1200) {
+        display: flex;
     }
 }

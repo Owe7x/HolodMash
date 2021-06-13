@@ -2,8 +2,17 @@
     background: url(../images/second-bg.jpg);
     background-repeat: no-repeat;
     margin-top: 150px;
+    @include breakpoint($bp-1441) {
+        background-position: center;
+    }
+    @include breakpoint($bp-769) {
+        margin-top: 75px;
+    }
     &-content {
         margin-bottom: 150px;
+        @include breakpoint($bp-769) {
+            margin-bottom: 75px;
+        }
     }
     &-li {
         font-size: 16px;
@@ -22,11 +31,30 @@
             content: "•"; 
             padding-right: 22px; /* Отступ от маркера до текста */
         }
+        @include breakpoint($bp-769) {
+            font-size: 14px;
+            line-height: 22px;
+        }
     }
     &-img {
         max-width: 695px;
         img {
             max-width: 665px;
+            @include breakpoint($bp-1441) {
+                max-width: 580px;
+            }
+            @include breakpoint($bp-1200) {
+                max-width: 460px;
+            }
+            @include breakpoint($bp-426) {
+                max-width: 400px;
+            }
+        }
+        @include breakpoint($bp-769) {
+            margin-top: 45px;
+        }
+        @include breakpoint($bp-426) {
+            display: none;
         }
     }
     &-block {
@@ -35,7 +63,7 @@
         background: #052B5B;
         border-radius: 50px 10px;
         padding: 14px 30px;
-        width: 548px;
+        max-width: 548px;
         margin-top: -80px;
         position: relative;
         &__text {
@@ -43,9 +71,26 @@
             font-size: 16px;
             font-weight: bold;
             line-height: 28px;
+            @include breakpoint($bp-769) {
+                font-size: 14px;
+                line-height: 24px;
+            }
+            @include breakpoint($bp-426) {
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 18px;
+            }
         }
         &__img {
             margin-right: 30px;
+            img {
+                @include breakpoint($bp-426) {
+                    max-width: 40px;
+                }
+            }
+        }
+        @include breakpoint($bp-426) {
+            margin-top: 0px;
         }
     }
 }

@@ -14318,3 +14318,45 @@ Build date: 2019-12-19 16:51:02
 .w--1150 {
     max-width: 1150px !important;
 }
+
+.footer-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.footer-info {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: #434343;
+}
+
+.footer-info-text {
+    margin-bottom: 10px;
+}
+
+.footer__phone a {
+    color: #FF4200;
+}
+
+.footer__number {
+    margin-bottom: 10px;
+}
+
+.footer__number a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FF4200;
+    text-decoration: none;
+}
+
+.footer__author__img {
+    margin-top: 10px;
+}

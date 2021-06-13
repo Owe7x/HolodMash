@@ -2,8 +2,14 @@
     background: url(../images/9-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    @include breakpoint($bp-1200) {
+        background-position: top center;
+    }
     &-content {
         padding-top: 200px;
+        @include breakpoint($bp-769) {
+            padding-top: 100px;
+        }
     }
     &-blocks {
         margin-top: 80px;
@@ -11,6 +17,12 @@
     &-block {
         max-width: 534px;
         margin-bottom: 60px;
+        @include breakpoint($bp-769) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto 60px;
+        }
         &__img {
             margin-bottom: 20px;
         }
@@ -19,12 +31,23 @@
             font-size: 20px;
             line-height: 30px;
             margin-bottom: 10px;
+            @include breakpoint($bp-769) {
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+            }
+            
         }
         &__p {
             font-weight: 500;
             font-size: 16px;
             line-height: 30px;
             color: #434343;
+            @include breakpoint($bp-769) {
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+            }
         }
     }
 }

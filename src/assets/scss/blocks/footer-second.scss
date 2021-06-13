@@ -5,6 +5,9 @@
     &-form {
         margin-top: 60px;
     }
+    @include breakpoint($bp-769) {
+        padding: 65px 0 50px;
+    }
 }
 .w--1150 {
     max-width: 1150px!important;

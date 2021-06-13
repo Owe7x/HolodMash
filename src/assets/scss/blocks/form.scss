@@ -14,11 +14,19 @@ form {
     font-size: 26px;
     line-height: 30px;
     margin-bottom: 46px;
+    @include breakpoint($bp-769) {
+        margin-bottom: 23px;
+        font-size: 22px;
+        line-height: 30px;
+    }
 }
 .form-blocks {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include breakpoint($bp-769) {
+        flex-direction: column;
+    }
 }
 .form-p {
     margin-top: 20px;
@@ -26,6 +34,10 @@ form {
     line-height: 20px;
     color: #6D6D6D;
     text-align: center;
+    @include breakpoint($bp-769) {
+        font-size: 10px;
+        line-height: 18px;
+    }
 }
 .form__link {
     input {
@@ -38,6 +50,12 @@ form {
             font-size: 18px;
             font-weight: 500;
         }
+        @include breakpoint($bp-769) {
+            width: 300px;
+        }
+    }
+    @include breakpoint($bp-769) {
+        margin-bottom: 20px;
     }
 }
 .form-subtitle {
@@ -46,6 +64,11 @@ form {
     line-height: 30px;
     text-align: center;
     color: #04092B;
+    @include breakpoint($bp-769) {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 30px;
+    }
 }
 
 .form-modal {
