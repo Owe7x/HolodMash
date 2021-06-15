@@ -149,3 +149,11 @@ $(".range6").ionRangeSlider({
   sliderHandler(srvPrices)
   }
 });
+
+$(document).ready(function() {
+	$('.menu-burger__header').click(function(){
+        $('.menu-burger__header').toggleClass('open-menu');
+        $('.header__nav-mobile').toggleClass('open');
+        $('body').toggleClass('fixed-page');
+	});
+});

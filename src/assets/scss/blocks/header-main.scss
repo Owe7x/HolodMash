@@ -2,6 +2,7 @@
     background: url(../images/header-bg.jpg);
     background-repeat: no-repeat;
     background-position: top center;
+    position: relative;
     padding: 72px 0px 0px;
     @include breakpoint($bp-426) {
         background-size: cover;
