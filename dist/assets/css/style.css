@@ -12457,18 +12457,18 @@ body {
     padding: 26px 0 18px;
 }
 
+@media screen and (max-width: 1024px) {
+    .header__nav {
+        display: none;
+    }
+}
+
 .ul-header {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 0;
-}
-
-@media screen and (max-width: 769px) {
-    .ul-header {
-        display: none;
-    }
 }
 
 .nav-li {
@@ -12487,10 +12487,99 @@ body {
     }
 }
 
+.menu-burger__header {
+    position: relative;
+    width: 40px;
+    height: 35px;
+    display: none;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-burger__header {
+        display: block;
+    }
+}
+
+.menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #515758;
+    margin: 0 auto;
+}
+
+.menu-burger__header span {
+    top: 16px;
+}
+
+.menu-burger__header:after, .menu-burger__header:before {
+    content: '';
+}
+
+.menu-burger__header:after {
+    bottom: 5px;
+}
+
+.menu-burger__header:before {
+    top: 5px;
+}
+
+.menu-burger__header.open-menu span {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.menu-burger__header.open-menu:before {
+    -webkit-transform: rotate(38deg);
+    transform: rotate(38deg);
+    top: 16px;
+    transition: 0.4s;
+}
+
+.menu-burger__header.open-menu:after {
+    -webkit-transform: rotate(-38deg);
+    transform: rotate(-38deg);
+    bottom: 16px;
+    transition: 0.4s;
+}
+
+.open {
+    opacity: 1 !important;
+    transition: opacity 1s, visibility 0s linear 0.3s !important;
+}
+
+.header__nav-mobile {
+    width: 50%;
+    background: #FAFAFA;
+    position: absolute;
+    top: 10%;
+    left: -15px;
+    z-index: 1;
+    opacity: 0;
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__nav-mobile {
+        display: block;
+    }
+}
+
+.ul-header--mobile {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.nav-li--mobile {
+    padding: 20px;
+}
+
 .header-main {
     background: url(../images/header-bg.jpg);
     background-repeat: no-repeat;
     background-position: top center;
+    position: relative;
     padding: 72px 0px 0px;
 }
 

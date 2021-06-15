@@ -9,9 +9,18 @@
         padding-top: 150px;
     }
 }
-.buznes-content__img {
-    position: absolute;
-    left: 0;
+.buznes-slider {
+    &::before {
+        display: block;
+        content: '';
+        width: 204px;
+        height: 204px;
+        background: #FF4200;
+        opacity: 0.9;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+    }
     img {
         @include breakpoint($bp-1441) {
             max-width: 700px;
@@ -23,4 +32,18 @@
     @include breakpoint($bp-1200) {
         display: none;
     }
+}
+.buznes-slider-block {
+    position: relative;
+    z-index: 2;
+
+}
+.slick-slider {
+    left: -300px;
+    @include breakpoint($bp-1441) {
+        left: -140px;
+    }
+}
+.slick-list {
+    overflow: visible;
 }

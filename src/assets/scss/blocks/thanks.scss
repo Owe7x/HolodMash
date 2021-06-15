@@ -1,0 +1,56 @@
+.thanks {
+    background: url(../images/thanks-bg.jpg);
+    background-repeat: no-repeat;
+    padding: 169px 0;
+    &-container {
+        margin: 0 auto;
+        width: 742px;
+        height: 742px;
+        background: #00305B;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 92px 0 160px;
+        position: relative;
+        &__text {
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 60px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &__p {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 40px;
+            color: #FFFFFF;
+        }
+        &::after {
+            display: block;
+            content: '';
+            width: 101px;
+            height: 101px;
+            background: #FF4200;
+            opacity: 0.9;
+            position: absolute;
+            top: 105px;
+            right: -10px;
+            border-radius: 50%;
+        }
+        &::before {
+            display: block;
+            content: '';
+            width: 227px;
+            height: 227px;
+            background: #FF4200;
+            opacity: 0.9;
+            position: absolute;
+            bottom: 234px;
+            right: -200px;
+            border-radius: 50%;
+        }
+    }
+}
