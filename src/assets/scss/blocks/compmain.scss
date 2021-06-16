@@ -1,9 +1,12 @@
 .compmain {
     background: url(../images/7-bg.jpg);
     background-repeat: no-repeat;
-    padding: 150px 0 100px;
+    padding: 150px 0 150px;
     @include breakpoint($bp-1441) {
         background-position: top center;
+    }
+    @include breakpoint($bp-769) {
+        background-position: top left;
     }
     @include breakpoint($bp-426) {
         padding: 90px 0 65px;

@@ -11,7 +11,7 @@
         background-size: cover;
     }
     &-content {
-        padding: 175px 0 125px;
+        padding: 150px 0 150px;
         max-width: 658px;
         @include breakpoint($bp-426) {
             padding: 90px 0 65px;

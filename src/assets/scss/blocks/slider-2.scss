@@ -7,17 +7,32 @@
         background-position: top center;
     }
 }
+.slider-2-block {
+    padding-bottom: 40px;
+    @include breakpoint($bp-1200) {
+        padding: 0 40px 40px;
+    }
+    @include breakpoint($bp-426) {
+        padding: 0 10px 40px;
+    }
+}
 .single-slider-block {
     background: #FFFFFF;
-    box-shadow: 0px 12px 23px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 12px 23px rgba(0, 0, 0, 0.15)!important;
     border-radius: 30px;
-    max-width: 1170px;
+    max-width: 1070px;
+    margin: 0 auto;
     padding: 66px 100px 65px 71px;
-    display: flex;
+    display: flex!important;
     align-items: flex-start;
+    position: relative;
+
     @include breakpoint($bp-769) {
-        padding: 60px 40px;
+        padding: 100px 40px 60px;
         flex-direction: column;
+    }
+    @include breakpoint($bp-426) {
+        padding: 100px 20px 60px;
     }
     &__title {
         font-weight: bold;
@@ -69,5 +84,48 @@
             bottom: -30px;
             right: 0;
         }
+    }
+}
+.nextArrowOtz {
+    background: url(../images/nextArrowOtz.png);
+    background-repeat: no-repeat;
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    cursor: pointer;
+    &:hover, &:focus {
+        opacity: 0.5;
+    }
+    @include breakpoint($bp-1400) {
+        top: 40px;
+        right: 160px;
+    }
+    @include breakpoint($bp-1200) {
+        top: 40px;
+        right: 80px;
+    }
+}
+.prevArrowOtz {
+    background: url(../images/prevArrowOtz.png);
+    background-repeat: no-repeat;
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    top: 40px;
+    right: 140px;
+    cursor: pointer;
+    z-index: 1;
+    &:hover, &:focus {
+        opacity: 0.5;
+    }
+    @include breakpoint($bp-1400) {
+        top: 40px;
+        right: 230px;
+    }
+    @include breakpoint($bp-1200) {
+        top: 40px;
+        right: 140px;
     }
 }

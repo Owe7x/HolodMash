@@ -7,6 +7,9 @@
         align-items: center;
         max-width: 846px;
         margin-top: 20px;
+        @include breakpoint($bp-1200) {
+            margin: 20px auto 0;
+        }
         &__price {
             font-style: normal;
             font-weight: 500;
@@ -52,13 +55,10 @@
             bottom: -50px;
             right: -50px;
             @include breakpoint($bp-1200) {
-                right: 0;
-            }
-            @include breakpoint($bp-1024) {
                 display: none;
             }
         }
-        @include breakpoint($bp-769) {
+        @include breakpoint($bp-1200) {
             padding: 60px  20px;
         }
     }
@@ -74,6 +74,9 @@
                 display: flex;
                 justify-content: space-between;
             }
+        }
+        @include breakpoint($bp-1200) {
+            margin: 0 auto;
         }
     }
     &-title {

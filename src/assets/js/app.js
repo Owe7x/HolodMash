@@ -1,11 +1,10 @@
 console.log('file 1');
 $('.responsive').slick({
-    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
-
+    dots: false,
     variableWidth: true,
     responsive: [
       {
@@ -165,4 +164,14 @@ $('.buznes-slider').slick({
   fade: true,
   cssEase: 'linear',
   arrows: false
+});
+
+$('.single-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  arrows: true,
+  nextArrow: '<div class="nextArrowOtz"></div>',
+  prevArrow: '<div class="prevArrowOtz"></div>',
 });

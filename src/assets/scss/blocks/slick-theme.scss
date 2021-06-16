@@ -130,7 +130,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-dots {
     position: absolute;
-    right: 60px;
+    right: 48%;
     bottom: 170px;
     list-style: none;
     display: block;
@@ -141,8 +141,14 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 10px 0;
     background: rgba(234, 234, 234, 0.7);
     border-radius: 22px;
+    @include breakpoint($bp-1600) {
+        right: 38%;
+    }
     @include breakpoint($bp-1441) {
-        right: 110px;
+        right: 36%;
+    }
+    @include breakpoint($bp-1024) {
+        display: none!important;
     }
     li {
         position: relative;
