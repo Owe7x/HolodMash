@@ -4,7 +4,7 @@
     padding: 169px 0;
     &-container {
         margin: 0 auto;
-        width: 742px;
+        max-width: 742px;
         height: 742px;
         background: #00305B;
         border-radius: 50%;
@@ -14,6 +14,16 @@
         align-items: center;
         padding: 92px 0 160px;
         position: relative;
+        @include breakpoint($bp-769) {
+            height: 630px;
+        }
+        @include breakpoint($bp-600) {
+            height: 600px;
+            padding-bottom: 90px;
+            background: none;
+            border-radius: 0;
+            
+        }
         &__text {
             font-weight: bold;
             font-size: 40px;
@@ -21,12 +31,22 @@
             text-align: center;
             text-transform: uppercase;
             color: #FFFFFF;
+            @include breakpoint($bp-600) {
+                font-size: 30px;
+                line-height: 40px;
+                color: #FF4200;
+            }
         }
         &__p {
             font-weight: 600;
             font-size: 20px;
             line-height: 40px;
             color: #FFFFFF;
+            @include breakpoint($bp-600) {
+                font-size: 16px;
+                line-height: 30px;
+                color: #FF4200;
+            }
         }
         &::after {
             display: block;
@@ -39,6 +59,9 @@
             top: 105px;
             right: -10px;
             border-radius: 50%;
+            @include breakpoint($bp-600) {
+                display: none;
+            }
         }
         &::before {
             display: block;
@@ -51,6 +74,9 @@
             bottom: 234px;
             right: -200px;
             border-radius: 50%;
+            @include breakpoint($bp-600) {
+                display: none;
+            }
         }
     }
 }

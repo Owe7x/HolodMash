@@ -15329,7 +15329,7 @@ Build date: 2019-12-19 16:51:02
 
 .thanks-container {
     margin: 0 auto;
-    width: 742px;
+    max-width: 742px;
     height: 742px;
     background: #00305B;
     border-radius: 50%;
