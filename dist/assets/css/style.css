@@ -12930,7 +12930,7 @@ form {
     margin-top: 150px;
 }
 
-@media screen and (max-width: 1441px) {
+@media screen and (max-width: 1600px) {
     .equipment {
         background-position: center;
     }
@@ -14391,8 +14391,8 @@ Build date: 2019-12-19 16:51:02
 
 @media screen and (max-width: 1200px) {
     .structure-block__img img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
     }
 }
 
@@ -14473,6 +14473,24 @@ Build date: 2019-12-19 16:51:02
 .service-content {
     padding: 150px 0 150px;
     max-width: 658px;
+}
+
+@media screen and (max-width: 1024px) {
+    .service-content {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 997px) {
+    .service-content {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .service-content {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -14570,7 +14588,18 @@ Build date: 2019-12-19 16:51:02
 
 @media screen and (max-width: 769px) {
     .compmain {
-        background-position: top left;
+        background-position: top center;
+        position: relative;
+    }
+
+    .compmain::after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 0;
     }
 }
 
@@ -14583,6 +14612,11 @@ Build date: 2019-12-19 16:51:02
 
 .compmain-content {
     max-width: 889px;
+}
+
+.compmain-content {
+    z-index: 2;
+    position: relative;
 }
 
 .compmain-nav-block {
@@ -14796,6 +14830,12 @@ Build date: 2019-12-19 16:51:02
     background: url(../images/9-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media screen and (max-width: 1500px) {
+    .discont {
+        background-position: top center;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -15147,8 +15187,8 @@ Build date: 2019-12-19 16:51:02
     }
 }
 
-.prevArrowOtz {
-    background: url(../images/prevArrowOtz.png);
+.prevArrow {
+    background: url(../images/prevArrow.png);
     background-repeat: no-repeat;
     width: 49px;
     height: 49px;
@@ -15159,19 +15199,19 @@ Build date: 2019-12-19 16:51:02
     z-index: 1;
 }
 
-.prevArrowOtz:hover, .prevArrowOtz:focus {
+.prevArrow:hover, .prevArrow:focus {
     opacity: 0.5;
 }
 
 @media screen and (max-width: 1400px) {
-    .prevArrowOtz {
+    .prevArrow {
         top: 40px;
         right: 230px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .prevArrowOtz {
+    .prevArrow {
         top: 40px;
         right: 140px;
     }

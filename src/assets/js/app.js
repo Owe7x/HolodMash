@@ -173,5 +173,5 @@ $('.single-slider').slick({
   fade: true,
   arrows: true,
   nextArrow: '<div class="nextArrowOtz"></div>',
-  prevArrow: '<div class="prevArrowOtz"></div>',
+  prevArrow: '<div class="prevArrow"></div>',
 });
