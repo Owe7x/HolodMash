@@ -13,6 +13,15 @@
     &-content {
         padding: 150px 0 150px;
         max-width: 658px;
+        @include breakpoint($bp-1024) {
+            max-width: 600px;
+        }
+        @include breakpoint($bp-997) {
+            max-width: 500px;
+        }
+        @include breakpoint($bp-769) {
+            max-width: 100%;
+        }
         @include breakpoint($bp-426) {
             padding: 90px 0 65px;
         }

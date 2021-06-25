@@ -2,7 +2,7 @@
     background: url(../images/second-bg.jpg);
     background-repeat: no-repeat;
     margin-top: 150px;
-    @include breakpoint($bp-1441) {
+    @include breakpoint($bp-1600) {
         background-position: center;
     }
     @include breakpoint($bp-769) {

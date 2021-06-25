@@ -8165,7 +8165,7 @@ form {
   background: url(../images/second-bg.jpg);
   background-repeat: no-repeat;
   margin-top: 150px; }
-  @media screen and (max-width: 1441px) {
+  @media screen and (max-width: 1600px) {
     .equipment {
       background-position: center; } }
   @media screen and (max-width: 769px) {
@@ -9269,7 +9269,7 @@ Build date: 2019-12-19 16:51:02
       display: flex; } }
 
 .structure {
-  background: url(../images/5-bg.jpg);
+  background: url(../images/5-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 150px;
@@ -9306,8 +9306,8 @@ Build date: 2019-12-19 16:51:02
         height: 100%; }
         @media screen and (max-width: 1200px) {
           .structure-block__img img {
-            width: 100%;
-            height: auto; } }
+            width: auto;
+            height: 100%; } }
         @media screen and (max-width: 997px) {
           .structure-block__img img {
             max-width: 190px; } }
@@ -9360,6 +9360,15 @@ Build date: 2019-12-19 16:51:02
   .service-content {
     padding: 150px 0 150px;
     max-width: 658px; }
+    @media screen and (max-width: 1024px) {
+      .service-content {
+        max-width: 600px; } }
+    @media screen and (max-width: 997px) {
+      .service-content {
+        max-width: 500px; } }
+    @media screen and (max-width: 769px) {
+      .service-content {
+        max-width: 100%; } }
     @media screen and (max-width: 426px) {
       .service-content {
         padding: 90px 0 65px; } }
@@ -9421,13 +9430,26 @@ Build date: 2019-12-19 16:51:02
       background-position: top center; } }
   @media screen and (max-width: 769px) {
     .compmain {
-      background-position: top left; } }
+      background-position: top center;
+      position: relative; }
+      .compmain::after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 0; } }
   @media screen and (max-width: 426px) {
     .compmain {
       padding: 90px 0 65px;
       background: none; } }
   .compmain-content {
     max-width: 889px; }
+
+.compmain-content {
+  z-index: 2;
+  position: relative; }
 
 .compmain-nav-block {
   display: flex;
@@ -9567,6 +9589,9 @@ Build date: 2019-12-19 16:51:02
   background: url(../images/9-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
+  @media screen and (max-width: 1500px) {
+    .discont {
+      background-position: top center; } }
   @media screen and (max-width: 1200px) {
     .discont {
       background-position: top center; } }
